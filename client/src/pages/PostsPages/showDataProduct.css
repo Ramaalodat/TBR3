@@ -1,0 +1,100 @@
+/* Product Details Styling */
+.product-details {
+  transition: all 0.3s ease;
+}
+
+.product-details:hover {
+  transform: translateY(-2px);
+}
+
+/* Image Gallery Styling */
+.image-gallery img {
+  transition: all 0.3s ease;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.02);
+}
+
+/* Feature List Styling */
+.feature-list li {
+  transition: all 0.2s ease;
+}
+
+.feature-list li:hover {
+  transform: translateX(5px);
+}
+
+/* Contact Information Styling */
+.contact-info {
+  background: linear-gradient(to right, #f3f4f6, #ffffff);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+/* Button Hover Effects */
+.contact-button {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.contact-button:active {
+  transform: translateY(0);
+}
+
+/* Modal Animation */
+.modal-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.modal-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.modal-exit {
+  opacity: 1;
+}
+
+.modal-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .image-gallery {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
